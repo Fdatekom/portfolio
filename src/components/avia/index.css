@@ -1,0 +1,11 @@
+.avia {
+    background: rgba(226, 234, 237, 0.9);
+    max-width: max-content;
+    min-height: 80vh;
+    max-height: max-content;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    }
+    

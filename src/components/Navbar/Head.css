@@ -1,0 +1,20 @@
+.header {
+    height: 45px;
+    background: #b1d1da;
+    text-align: center
+}
+.header a {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-right: 5px;
+    text-decoration: none;
+    color: black;
+    border-right-style: solid ;
+    border-right-width: 1px;
+}
+.header a:last-child{
+    border-right-style: none;
+}

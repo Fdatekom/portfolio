@@ -1,0 +1,19 @@
+
+form {
+    margin: auto;
+    background-color: white;
+    width: 400px;
+}
+
+form input {
+    background-color: white;
+    text-align: center;
+    height: 35px;
+    border: none;
+    width: 80%;
+}
+
+.buttonClass_1 {
+    border: none;
+    background-color: white;
+}

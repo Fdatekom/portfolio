@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route} from 'react-router-dom';
+import createBrowseristory from 'history/createBrowserHistory';
+import Navbar from './components/Navbar/Navbar'
+import Avia from './components/avia'
+import Todo from './components/todo';
+import Json from './components/Json'
+const history = createBrowseristory()
+class App extends React.Component {
+  render (){
+    return(
+      <BrowserRouter history={history}>
+        <Navbar />
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+        <Route path='/avia' component={Avia} />
+        <Route path='/todo' component={Todo} />
+        <Route path='/json' component={Json} />
+      </BrowserRouter>
+    )
+   
+  }
+ 
+ 
 }
 
 export default App;

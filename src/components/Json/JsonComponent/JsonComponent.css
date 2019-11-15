@@ -1,0 +1,19 @@
+.jsonComponent {
+    border: 1px solid black;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+button {
+    border-radius: 15px;
+    user-select: none;
+    outline: none;
+}
+section {
+    background: rgba(226,234,237,0.9);
+    width: 80vw;
+    min-height: 80vh;
+    max-height: max-content;
+    margin-left: 10vw;
+}
