@@ -45,7 +45,7 @@ export default class  extends Component {
 
   componentDidMount = () => {
     const isLoad = this.state.isLoad
-    fetch('http://jsonplaceholder.typicode.com/comments')
+    fetch('https://jsonplaceholder.typicode.com/comments')
       .then(res => {
         res.json().then(data => {
           this.setState({
