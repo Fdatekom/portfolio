@@ -16,3 +16,10 @@
         width: 650px;
 }
 }
+.mainPage a{
+    text-decoration: none;
+}
+.mainPage a:visited{
+    text-decoration: none;
+    color: blue;
+}

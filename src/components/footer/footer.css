@@ -9,3 +9,11 @@
     font-weight: regular;
     color: whitesmoke
 }
+.footer a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.footer a:visited {
+    text-decoration: none;
+    color: whitesmoke;
+}
