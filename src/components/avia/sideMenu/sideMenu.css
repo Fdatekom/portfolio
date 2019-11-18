@@ -3,6 +3,7 @@
   margin-top: 30px;
   margin-left: 30px;
   width: 15vw;
+  min-width: max-content;
 }
 .sideMenu ul {
   padding-left: 0;
@@ -16,9 +17,30 @@ float: right;
 }
 .sideMenu ul li button:hover{
   color: blue;
+  cursor: pointer;
 
 }
 .sideMenu ul li button:focus{
   border: none;
   outline: none;
+  cursor: pointer;
+}
+.mobileSideMenu{
+  display: none;
+  background: #ff6d00;
+  border: none;
+}
+@media (max-width: 900px){
+  .sideMenu{
+    position: fixed;
+    z-index: 2;
+    background: #b1d1da;
+    display: none;
+  }
+  .mobileSideMenu{
+    display: block;
+  }
+  .showLinkList{
+    display: block;
+  }
 }

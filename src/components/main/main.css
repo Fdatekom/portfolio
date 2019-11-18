@@ -1,0 +1,15 @@
+.mainPage {
+    width: 80vw;
+    background: rgba(226,234,237,0.9);
+    margin: auto ;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 90vh;
+}
+@media(max-width: 650px){
+    .mainPage{
+        width: 650px;
+}
+}

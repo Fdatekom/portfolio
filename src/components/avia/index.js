@@ -3,6 +3,7 @@ import SideMenu from "./sideMenu/sideMenu";
 import MainContent from "./MainContent/MainContent";
 import Data from "./db.json";
 import './index.css'
+import Footer from "../footer/footer";
 
 
 class Avia extends React.Component {
@@ -86,13 +87,13 @@ class Avia extends React.Component {
             isLoad={this.state.isLoad}
           />
         </div>
+        <Footer />
       </React.Fragment>
     );
   }
 
   componentDidMount = () => {
     const isLoad = this.state.isLoad;
-    console.log(Data.tickets);
     this.setState({
       data: Data.tickets,
       isLoad: !isLoad,

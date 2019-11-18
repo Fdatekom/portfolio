@@ -1,11 +1,25 @@
 .avia {
-    background: rgba(226, 234, 237, 0.9);
-    max-width: max-content;
-    min-height: 80vh;
-    max-height: max-content;
-    margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+  background: rgba(226, 234, 237, 0.9);
+  max-width: max-content;
+  min-height: 80vh;
+  max-height: max-content;
+  margin: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  min-height: 100vh;
+  min-width: 850px;
+  padding-top: 10px;
+}
+@media (max-width: 900px) {
+  .avia {
+      display: block;
+      min-width: 95vw;
+  }
+}
+@media(max-width: 650px) {
+    .avia{
+        display: block;
+        min-width: 650px;
     }
-    
+}

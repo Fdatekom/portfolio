@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import ItemsForm from "./ItemsForm/ItemsForm";
 import TodoActive from "./TodoActiv/TodoActiv";
 import Items from "./Items/Items";
 import "./todo.css";
-
+import Footer from "../footer/footer";
 function updateArrayItem(array, action) {
   return array.map(item => {
     if (item.id !== action.id) {
@@ -34,7 +34,7 @@ function removeAchievidItems(array) {
   });
 }
 
- class Todo extends Component {
+class Todo extends Component {
   constructor(props) {
     super(props);
 
@@ -97,30 +97,37 @@ function removeAchievidItems(array) {
   render() {
     const todos = this.state.todos;
     return (
-      <section>
-        <ItemsForm onAdd={this.handleAdd} />
-        <Items
-          items={todos.filter(item => {
-            if (this.state.active === "all") {
-              return item;
-            } else if (
-              this.state.active === "active" &&
-              item.isAchieved === false
-            ) {
-              return item;
-            } else if (
-              this.state.active === "complited" &&
-              item.isAchieved === true
-            ) {
-              return item;
-            }
-          })}
-          onChange={this.onChange}
-          onRemove={this.onRemove}
-          onAchieved={this.onAchieved}
-        />
-        <TodoActive onActive={this.onActive} onRemove={this.onRemoveAchieved} />
-      </section>
+      <Fragment>
+        <section>
+          <TodoActive
+            onActive={this.onActive}
+            onRemove={this.onRemoveAchieved}
+          />
+
+          <ItemsForm onAdd={this.handleAdd} />
+          <Items
+            items={todos.filter(item => {
+              if (this.state.active === "all") {
+                return item;
+              } else if (
+                this.state.active === "active" &&
+                item.isAchieved === false
+              ) {
+                return item;
+              } else if (
+                this.state.active === "complited" &&
+                item.isAchieved === true
+              ) {
+                return item;
+              }
+            })}
+            onChange={this.onChange}
+            onRemove={this.onRemove}
+            onAchieved={this.onAchieved}
+          />
+        </section>
+        <Footer />
+      </Fragment>
     );
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import withLoader from "../../hoc/isLoader";
 import "./MainContent.css";
-//import image from "../image/12.png";
+import image from "./turkishairlines.jpg";
 class MainContent extends Component {
   constructor(props) {
     super(props);
@@ -13,15 +13,18 @@ class MainContent extends Component {
   render() {
     const data = this.props.data;
     return (
-      <div className='aviaMainContent'>
+      <div className="aviaMainContent">
         {data.map((item, idx) => (
           <div className="mainCard" key={idx}>
             <div className="priceDiv">
               <div>
-                <span>
+                <img src={image} alt='Turkish Airlines ®️'/>
+              </div>
+              <div>
+                <button className='buyButton'>
                   Купить <br />
                   за {item.price} Р
-                </span>
+                </button>
               </div>
             </div>{" "}
             <div className="departure">
@@ -34,7 +37,7 @@ class MainContent extends Component {
             </div>{" "}
             <div className="stopsDiv">
               {" "}
-              <span>
+              <span className='stopsInfo'>
                 {item.stops}{" "}
                 <h5 className={item.stops === 0 ? "stops" : "none"}>
                   {" "}
@@ -50,7 +53,7 @@ class MainContent extends Component {
                 </h5>{" "}
                 <br />
               </span>{" "}
-               <hr /> {/* <img src={image} alt="air" /> */}
+              <hr /> {/* <img src={image} alt="air" /> */}
             </div>{" "}
             <div className="arrival">
               {" "}

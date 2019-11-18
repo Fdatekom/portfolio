@@ -66,7 +66,6 @@ export default class ToDoItem extends Component {
   render () {
     const { text, id, idx } = this.props
     const { newText } = this.state
-    console.log(this.props.isAchieved)
     return (
       <div className="todo_Items">
         {this.state.isEdit ? (

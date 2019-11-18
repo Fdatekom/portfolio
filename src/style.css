@@ -1,0 +1,23 @@
+body {
+background: rgba(220, 220, 220);
+margin: auto;
+}
+
+section {
+    background: rgba(226,234,237,0.9);
+    width: 80vw;
+    min-height: 100vh;
+    max-height: max-content;
+
+}
+@media (max-width: 900px) {
+    section {
+        min-width: 95vw;
+        margin:auto;
+    }
+  }
+  @media(max-width: 650px) {
+      section{
+          min-width: 650px;
+      }
+  }
