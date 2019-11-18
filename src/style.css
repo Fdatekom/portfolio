@@ -1,16 +1,18 @@
 body {
 background: url('./background.jpg');
+background-size: cover;
+background-attachment: fixed;
 margin: auto;
 font-family: "Open Sans";
 font-size: 14pt;
 }
 
 section {
-    background: rgba(226,234,237,0.9);
+    background: rgba(255, 255, 255, 0.9) ;
     width: 80vw;
     min-height: 100vh;
     max-height: max-content;
-
+    margin-bottom: 20px;
 }
 @media (max-width: 900px) {
     section {

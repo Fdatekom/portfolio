@@ -3,8 +3,9 @@
     bottom: 0;
     width: 100vw;
     text-align: center;
-    background: #6d8498;
+    background-image: linear-gradient(to right, rgb(10, 16, 77), rgb(10, 16, 71), rgb(11, 15, 65), rgb(11, 15, 60), rgb(11, 15, 54), rgb(11, 14, 48), rgb(12, 14, 42), rgb(12, 13, 36), rgb(12, 13, 30), rgb(12, 13, 25), rgb(13, 12, 19), rgb(13, 12, 13));
     font-family:Merriweather ;
     font-size: 14pt;
     font-weight: regular;
+    color: whitesmoke
 }

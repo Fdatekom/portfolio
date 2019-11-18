@@ -64,7 +64,7 @@ class Avia extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="avia">
+        <section className="avia">
           <SideMenu
             onActive={this.onActive}
             active={this.state.active}
@@ -86,7 +86,7 @@ class Avia extends React.Component {
               .sort((a, b) => a.price - b.price)}
             isLoad={this.state.isLoad}
           />
-        </div>
+        </section>
         <Footer />
       </React.Fragment>
     );
