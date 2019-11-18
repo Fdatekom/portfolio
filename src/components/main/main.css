@@ -8,6 +8,9 @@
     padding-right: 20px;
     min-height: 90vh;
 }
+.mainPage ul {
+    line-height: 1.5;
+}
 @media(max-width: 650px){
     .mainPage{
         width: 650px;

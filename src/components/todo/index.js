@@ -99,6 +99,9 @@ class Todo extends Component {
     return (
       <Fragment>
         <section>
+          <div style={{fontSize:"10pt"}}>
+            Использование CRUD в приложении
+          </div>
           <TodoActive
             onActive={this.onActive}
             onRemove={this.onRemoveAchieved}

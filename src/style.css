@@ -1,6 +1,8 @@
 body {
-background: rgba(220, 220, 220);
+background: url('./background.jpg');
 margin: auto;
+font-family: "Open Sans";
+font-size: 14pt;
 }
 
 section {
@@ -20,4 +22,15 @@ section {
       section{
           min-width: 650px;
       }
+  }
+  h1{
+      font-family: Merriweather;
+      font-size: 16pt;
+      font-weight: bold;
+    color: #168262;
+  }
+  h3{
+      font-family: Merriweather;
+      font-size: 16pt;
+      font-weight: bold;
   }

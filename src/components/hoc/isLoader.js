@@ -14,7 +14,7 @@ function withLoader (Component) {
             const {isLoad, ...props} = this.props;
 
              return (
-                  isLoad ? <Component {...props} /> : <div> Загрузка </div> 
+                  isLoad ? <Component {...props} /> : <section> Загрузка </section> 
              )
         }
     }

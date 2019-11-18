@@ -38,12 +38,11 @@ export default class extends Component {
   render() {
     return (
       <Fragment>
-        <div className="App">
           <JsonComponent
             items={this.state.data.filter((item, idx) => {
               if (
                 item.postId <= this.state.count &&
-                 this.state.filterArray.indexOf(item.id) === -1
+                this.state.filterArray.indexOf(item.id) === -1
               ) {
                 return item;
               }
@@ -53,7 +52,7 @@ export default class extends Component {
             onRemove={this.removeAllItems}
             isLoad={this.state.isLoad}
           />
-        </div>
+        
         <Footer />
       </Fragment>
     );
