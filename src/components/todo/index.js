@@ -4,12 +4,13 @@ import TodoActive from "./TodoActiv/TodoActiv";
 import Items from "./Items/Items";
 import "./todo.css";
 import Footer from "../footer/footer";
+import { setTimeout } from "timers";
 function updateArrayItem(array, action) {
   return array.map(item => {
     if (item.id !== action.id) {
       return item;
     } else if (item.id === action.id) {
-      return { text: action.text, id: item.id, isAchived: item.isAchived };
+      return { text: action.text, id: item.id, isAchived: item.isAchived, className: '' };
     }
   });
 }
@@ -24,7 +25,7 @@ function achievedArrayItem(array, action) {
     if (item.id !== action.id) {
       return item;
     } else if (item.id === action.id) {
-      return { text: item.text, id: item.id, isAchieved: !action.isAchieved };
+      return { text: item.text, id: item.id, isAchieved: !action.isAchieved, className: '' };
     }
   });
 }
@@ -33,7 +34,21 @@ function removeAchievidItems(array) {
     return item.isAchieved === false;
   });
 }
+function alertUpdate(propertyName, array , arg){
+  console.log(array)
+ return array.map(item => {
+   if(item.id === propertyName && arg ){
+     console.log(1)
+      return {  text: item.text, id: item.id, isAchieved: item.isAchieved, className: 'alert' }
+  } else if(item.id === propertyName && !arg ){
+    console.log(2)
+     return {  text: item.text, id: item.id, isAchieved: item.isAchieved, className: '' }
+   } else {
+     return item
+   }
+ })
 
+}
 class Todo extends Component {
   constructor(props) {
     super(props);
@@ -41,6 +56,8 @@ class Todo extends Component {
     this.state = {
       todos: [],
       active: "all",
+      isEdit: false,
+      updateItemId: ''
     };
   }
 
@@ -94,6 +111,25 @@ class Todo extends Component {
     this.setState({ todos: newTodo });
   };
 
+  onEdit = propertyName  =>{
+    this.setState({
+      isEdit: !this.state.isEdit,
+      updateItemId: propertyName
+    })
+  }
+
+  alertInput = propertyName => {
+    const {updateItemId } = this.state
+    const newTodos = alertUpdate(updateItemId, this.state.todos, true)
+    this.setState({todos: newTodos })
+    const after= arg => {
+      const afterTodos = alertUpdate(updateItemId, this.state.todos, false)
+      this.setState({
+        todos: afterTodos
+      })
+    }
+    setTimeout(after, 1000)
+  }
   render() {
     const todos = this.state.todos;
     return (
@@ -102,12 +138,13 @@ class Todo extends Component {
           <div style={{fontSize:"10pt"}}>
             Использование CRUD в приложении
           </div>
+       
+
+          <ItemsForm onAdd={this.handleAdd} />
           <TodoActive
             onActive={this.onActive}
             onRemove={this.onRemoveAchieved}
           />
-
-          <ItemsForm onAdd={this.handleAdd} />
           <Items
             items={todos.filter(item => {
               if (this.state.active === "all") {
@@ -127,7 +164,11 @@ class Todo extends Component {
             onChange={this.onChange}
             onRemove={this.onRemove}
             onAchieved={this.onAchieved}
+            isEdit={this.state.isEdit}
+            onEdit={this.onEdit}
+            alertInput={this.alertInput}
           />
+          
         </section>
         <Footer />
       </Fragment>

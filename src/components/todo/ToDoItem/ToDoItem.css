@@ -6,10 +6,18 @@
     margin-bottom: 10px;
     margin-top: 10px;
     overflow: hidden;
-    width: 400px;
+    width: 75vw;
+    background: #ffffff;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 16pt;
 }
 .todo_Items input {
-    text-align: center
+    text-align: center;
+    min-height: 90%;
+    font-size: 16pt;
 }
 .checkbox_item {
     float: left;
@@ -23,4 +31,16 @@
 .achived {
     text-decoration: line-through
 }
-
+.item_position{
+    padding-top: 16px;
+}
+.todo_Items div {
+    padding-left: 20px;
+}
+.button_remove{
+    border: none;
+    background: none;
+}
+.alert {
+    border: 1px solid red ;
+}

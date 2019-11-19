@@ -11,7 +11,7 @@ export default class Items extends Component {
   render () {
     const items = this.props.items
     return (
-      <div>
+      <div className='todo_container'>
         {items.map((item, idx) => (
           <ToDoItem
             text={item.text}
@@ -21,6 +21,10 @@ export default class Items extends Component {
             onChange={this.props.onChange}
             onRemove={this.props.onRemove}
             onAchieved={this.props.onAchieved}
+            isEdit={this.props.isEdit}
+            onEdit={this.props.onEdit}
+            alertInput={this.props.alertInput}
+            className={item.className}
           />
         ))}
       </div>

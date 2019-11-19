@@ -19,33 +19,41 @@ export default class ToDoItem extends Component {
 
   onDoubleClick = event => {
     const { isEdit } = this.state.isEdit
-    const { text } = this.props
-    console.log(this.state.isEdit)
-    if (!this.props.isAchieved) {
+    const { text, onEdit, alertInput } = this.props
+    if (!this.props.isAchieved && !this.props.isEdit) {
+      if(typeof onEdit === 'function'){
+        onEdit(event.target.id)
+      } else {
+
+      }
       this.setState({
         isEdit: !isEdit,
         newText: text
       })
+    } else {
+      if(typeof alertInput === 'function'){
+        alertInput(event.target.id)
+      }
     }
   }
 
   onKeyDown = event => {
-    const onChange = this.props.onChange
+    const {onChange, onEdit} = this.props
 
     if (
       event.keyCode === 13 &&
       typeof onChange === 'function' &&
-      this.state.newText.length >= 1
+      this.state.newText.length >= 1 && typeof onEdit==='function'
     ) {
       const { isEdit } = this.state
       this.setState({
         isEdit: !isEdit
       })
       onChange(this.state.newText, event.target.id)
+      onEdit()
       this.setState({ newText: '' })
     } else {
-        
-    }
+    } 
   } 
 
   onClickRemove = (event, id) => {
@@ -64,7 +72,7 @@ export default class ToDoItem extends Component {
   }
 
   render () {
-    const { text, id, idx } = this.props
+    const { text, id, idx, className } = this.props
     const { newText } = this.state
     return (
       <div className="todo_Items">
@@ -76,13 +84,14 @@ export default class ToDoItem extends Component {
             value={newText}
             onChange={this.hendlerPropertyChange}
             autoFocus
+            className={className}
           />
         ) :  (
           <div
             id={id}
             key={idx}
             onDoubleClick={this.onDoubleClick}
-            className={this.props.isAchieved? ('achived'):('notAchived')}
+            className={this.props.isAchieved? ('achived '):('notAchived')}
           >
             <input
               type='checkbox'
@@ -91,7 +100,7 @@ export default class ToDoItem extends Component {
               checked={this.props.isAchieved}
             />{' '}
             {text}{' '}
-            <button onClick={() => this.props.onRemove(id)}>Del</button>
+            <button className='button_remove' onClick={() => this.props.onRemove(id)}>X</button>
           </div>
         ) }
       </div>

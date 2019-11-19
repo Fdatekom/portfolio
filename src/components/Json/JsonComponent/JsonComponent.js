@@ -29,11 +29,11 @@ class JsonComponent extends Component {
               <button className="filterButton" onClick={this.onFilter(item.id)}>
                 X
               </button>
-              <p className="jsonEmail">email: {item.email}</p>{" "}
-              <p className="jsonName">name: {item.name}</p>{" "}
+              <p className="jsonEmail"> <strong>email:</strong> {item.email}</p>{" "}
+              <p className="jsonName"><strong>name:</strong> {item.name}</p>{" "}
               <div className="jsonText">
                 {" "}
-                text: <br /> <p className="jsonTextBody"> {item.body}</p>{" "}
+               <strong>text:</strong>  <br /> <p className="jsonTextBody"> {item.body}</p>{" "}
               </div>
               <br />{" "}
             </div>

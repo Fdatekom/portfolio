@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './TodoActiv.css'
+import image from '../filter_filters_funnel_list_navigation_sort_sorting_icon_123212@1X.png'
 export default class TodoActiv extends Component {
   constructor (props) {
     super(props)
@@ -16,14 +17,16 @@ export default class TodoActiv extends Component {
       }
     }
   
-
+    
   render () {
     return (
       <div className='TodoActive'>
-        <button onClick={this.onActiveAll('all')}>All</button>
-        <button onClick={this.onActiveAll('active')}>Active</button>
-        <button onClick={this.onActiveAll('complited')}>Compited</button> <br />
-        <button onClick={this.props.onRemove}>Del All Complited</button>
+        <img src={image} alt='settings' /> Show:
+        <button className='button_filter_todo' onClick={this.onActiveAll('all')}>All</button>
+        <button className='button_filter_todo' onClick={this.onActiveAll('active')}>Active</button>
+        <button className='button_filter_todo' onClick={this.onActiveAll('complited')}>Compited</button> <br />
+        <div className='clear_conteiner'>
+        <button className='button_del_todo' onClick={this.props.onRemove}>Clear</button></div>
       </div>
     )
   }

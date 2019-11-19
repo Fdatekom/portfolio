@@ -1,5 +1,7 @@
 import './ItemsForm.css'
 import React, { Component } from 'react'
+import image from '../send-button@1X.png'
+
 const nanoid = require('nanoid')
 
 export default class ItemsForm extends Component {
@@ -8,7 +10,8 @@ export default class ItemsForm extends Component {
     this.state = {
       text: '',
       id: 'todo' + nanoid(),
-      isAchieved: false
+      isAchieved: false,
+      className: ''
     }
   }
 
@@ -44,7 +47,7 @@ export default class ItemsForm extends Component {
           autoFocus
         />
        
-        <button className='buttonClass_1' onClick={this.handleAddClick}>Send</button>
+        <button className='buttonClass_1' onClick={this.handleAddClick}><img src={image} alt='send' /></button>
       </form>
     )
   }

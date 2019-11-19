@@ -10,6 +10,8 @@ font-size: 14pt;
 section {
     background: rgba(255, 255, 255, 0.9) ;
     width: 80vw;
+    margin: auto;
+
     min-height: 100vh;
     max-height: max-content;
     margin-bottom: 20px;
@@ -33,6 +35,6 @@ section {
   }
   h3{
       font-family: Merriweather;
-      font-size: 16pt;
+      font-size: 15pt;
       font-weight: bold;
   }

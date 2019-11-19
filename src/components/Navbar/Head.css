@@ -1,10 +1,10 @@
 .header {
     height: 45px;
-    background-image: linear-gradient(to right, rgb(63, 77, 227), rgb(58, 70, 212), rgb(52, 63, 198), rgb(47, 56, 183), rgb(41, 49, 168), rgb(36, 42, 154), rgb(30, 35, 139), rgb(25, 28, 125), rgb(19, 21, 110), rgb(14, 14, 95), rgb(8, 7, 81), rgb(3, 0, 66));
-    font-family:Merriweather ;
-    font-size: 14pt;
+    background:#ffffff ;
+    font-family: OpenSans-Bold, AdobeInvisFont, Tahoma;
+    font-size: 16pt;
     font-weight: regular;
-    text-align: center;
+    
 }
 .header a {
     display: inline-block;
@@ -18,11 +18,17 @@
     border-right-width: 1px;
     padding-left: 10px;
     padding-right: 10px;
-    color: whitesmoke;
+    color: rgba(63, 88, 117, 255);;
 
+}
+.header a img {
+    color: gray
 }
 .header a:last-child{
     border-right-style: none;
+}
+.header a:first-child{
+   margin-left: 10vw;
 }
 @media(max-width: 650px) {
     .header{
