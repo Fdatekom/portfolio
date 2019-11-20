@@ -2,18 +2,36 @@
     position: fixed;
     bottom: 0;
     width: 100vw;
+    height: 50px;
     text-align: center;
-    background-image: linear-gradient(to right, rgb(10, 16, 77), rgb(10, 16, 71), rgb(11, 15, 65), rgb(11, 15, 60), rgb(11, 15, 54), rgb(11, 14, 48), rgb(12, 14, 42), rgb(12, 13, 36), rgb(12, 13, 30), rgb(12, 13, 25), rgb(13, 12, 19), rgb(13, 12, 13));
+    background: #ffffff;
     font-family:Merriweather ;
     font-size: 14pt;
     font-weight: regular;
-    color: whitesmoke
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: inherit;
+    color:  rgba(62, 88, 117, 255) ;
 }
 .footer a {
     text-decoration: none;
-    color: whitesmoke;
+    color:  rgba(62, 88, 117, 255);
+
 }
 .footer a:visited {
     text-decoration: none;
-    color: whitesmoke;
+    color:  rgba(62, 88, 117, 255);
+
+}
+.footer_block {
+    display: inline-block;
+}
+.footer_text {
+    display: inline-block;
+    vertical-align: super;
+    font-size: 14pt;
+    white-space: nowrap;
+    color:  rgba(62, 88, 117, 255) !important;
+
 }

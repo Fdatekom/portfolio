@@ -55,12 +55,7 @@ export default class SideMenu extends Component {
                 onChange={this.onChange(checkedall, "all", "checkedall")}
               />{" "}
               <label htmlFor="all">Все</label>
-              <button
-                onClick={this.onChange(checkedall, "all", "checkedall", true)}
-              >
-                {" "}
-                ТОЛЬКО
-              </button>
+             
             </li>
             <li>
               <input

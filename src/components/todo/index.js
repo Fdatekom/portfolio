@@ -35,13 +35,10 @@ function removeAchievidItems(array) {
   });
 }
 function alertUpdate(propertyName, array , arg){
-  console.log(array)
  return array.map(item => {
    if(item.id === propertyName && arg ){
-     console.log(1)
       return {  text: item.text, id: item.id, isAchieved: item.isAchieved, className: 'alert' }
   } else if(item.id === propertyName && !arg ){
-    console.log(2)
      return {  text: item.text, id: item.id, isAchieved: item.isAchieved, className: '' }
    } else {
      return item
@@ -83,6 +80,7 @@ class Todo extends Component {
       id: id,
       text: lastText,
       isAchieved: false,
+      updateItemId: ''
     });
     this.setState({
       todos: newTodo,
@@ -103,6 +101,7 @@ class Todo extends Component {
   onActive = propertyName => {
     this.setState({
       active: propertyName,
+      isEdit: false
     });
   };
   onRemoveAchieved = event => {

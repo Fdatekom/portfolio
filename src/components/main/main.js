@@ -8,8 +8,8 @@ export default class Main extends React.Component {
             <div className='mainPage'>
                 <h1>Добро пожаловать!</h1>
                 <p>Меня зовут Борис и я  Junior Frontend разработчик</p>
-                <h3>Технологии, библиотеки которыми я владею:</h3>
-                <ul>
+                <p>Технологии, библиотеки которыми я владею:</p>
+                <ul className='main_list'>
                     <li>JavaScript</li>
                     <li>React</li>
                     <li>Next js</li>
@@ -24,10 +24,7 @@ export default class Main extends React.Component {
                 </ul>
                 <p>За годы в свободном полете я успел поработать на фрилансе, прокладывал слаботочные кабеля, отслужил в армии. Получил первоночальные знания о Frontend на <a href='http://geekbrains.ru/'>Geekbrains</a>, впоследствии выпустил комерческий сайт.   </p>
                 <p>Своей самой лучшими чертами в разработке считаю умение пользоваться Google, стараюсь сделать как можно лучше и желания развивать себя и свой код. </p>
-                <p>Ссылка на мои гитхаб : <a href='http://github.com/Fdatekom/'>Fdatekom</a>   </p>
-                <p>Телефон: +7-(916)-081-34-17</p>
-                <p>Email: fdatekom@gmail.com</p>
-                <p>Telegram: <a href='https://t.me/fdatekom'>Fdatekom</a> </p>
+               
                 
             </div>
             <Footer />

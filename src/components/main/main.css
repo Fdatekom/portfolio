@@ -4,14 +4,15 @@
     margin: auto ;
     margin-top: 0;
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 10vw;
     padding-right: 20px;
     min-height: 90vh;
     padding-bottom: 20px;
 }
-.mainPage ul {
-    line-height: 1.5;
+.mainPage p {
+    width: 70%;
 }
+
 @media(max-width: 650px){
     .mainPage{
         width: 650px;
@@ -23,4 +24,9 @@
 .mainPage a:visited{
     text-decoration: none;
     color: blue;
+}
+.main_list {
+    list-style-image: url('./verification-mark@1X.png');
+    line-height: 1.5;
+
 }

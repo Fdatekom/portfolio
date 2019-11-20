@@ -7,7 +7,7 @@ export default class extends Component {
     super(props);
     this.state = {
       data: [],
-      count: 0,
+      count: 1,
       isLoad: false,
       filterArray: [],
     };
@@ -22,7 +22,8 @@ export default class extends Component {
   };
 
   removeAllItems = () => {
-    const count = 0;
+    const old_count=this.state.count
+    const count = old_count-1;
     this.setState({
       count: count,
     });

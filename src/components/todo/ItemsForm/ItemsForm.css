@@ -9,12 +9,14 @@ form {
 
 form input {
     background-color: white;
-    text-align: center;
     height: 65px;
     border: none;
     max-width: 95%;
     min-width: 90%;
     font-size: 25pt;
+}
+form input::placeholder{
+    text-align: left;
 }
 form input:focus{
     outline:none;
