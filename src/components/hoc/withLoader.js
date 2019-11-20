@@ -1,5 +1,6 @@
 import React from 'react';
-
+import image from './loading.gif'
+import './style.css'
 function withLoader (Component) {
 
     class LoadScrin extends React.Component {
@@ -9,7 +10,7 @@ function withLoader (Component) {
             const {isLoad, ...props} = this.props;
 
              return (
-                  isLoad ? <Component {...props} /> : <div> Загрузка </div> 
+                  isLoad ? <Component {...props} /> : <section> <div className='hoc_load'><img src={image} alt='load' /><p className='hoc_text'>Loading</p></div></section> 
              )
         }
     }

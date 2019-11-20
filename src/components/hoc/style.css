@@ -1,0 +1,17 @@
+.hoc_load{
+    margin: auto;
+    max-width: 90%;
+    width: max-content;
+}
+.hoc_load img {
+    width: 100%;
+}
+@media(max-width: 900px){
+    .hoc_load{
+        margin: auto;
+        width: 90%;
+    } 
+}
+.hoc_text {
+    text-align: center;
+}
