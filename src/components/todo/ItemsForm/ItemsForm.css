@@ -1,33 +1,31 @@
-
 form {
-    margin: auto;
-    background-color: white;
-    width: 75vw;
-    margin-top: 91px;
-
+  margin: auto;
+  background-color: white;
+  width: 75%;
+  margin-top: 91px;
 }
 
 form input {
-    background-color: white;
-    height: 65px;
-    border: none;
-    max-width: 95%;
-    min-width: 90%;
-    font-size: 25pt;
+  background-color: white;
+  height: 65px;
+  border: none;
+  max-width: 95%;
+  min-width: 90%;
+  font-size: 25pt;
 }
-form input::placeholder{
-    text-align: left;
+form input::placeholder {
+  text-align: left;
 }
-form input:focus{
-    outline:none;
+form input:focus {
+  outline: none;
 }
 .buttonClass_1 {
-    border: none;
-    background-color: white;
+  border: none;
+  background-color: white;
 }
 
-@media(max-width: 650px){
-    form{
-        width: 650px;
-}
+@media (max-width: 650px) {
+  form {
+    width: 650px;
+  }
 }

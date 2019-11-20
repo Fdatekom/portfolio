@@ -22,8 +22,8 @@ export default class extends Component {
   };
 
   removeAllItems = () => {
-    const old_count=this.state.count
-    const count = old_count-1;
+    const old_count = this.state.count;
+    const count = old_count - 1;
     this.setState({
       count: count,
     });
@@ -39,21 +39,21 @@ export default class extends Component {
   render() {
     return (
       <Fragment>
-          <JsonComponent
-            items={this.state.data.filter((item, idx) => {
-              if (
-                item.postId <= this.state.count &&
-                this.state.filterArray.indexOf(item.id) === -1
-              ) {
-                return item;
-              }
-            })}
-            addFilter={this.addFilter}
-            onSend={this.renderMoreItems}
-            onRemove={this.removeAllItems}
-            isLoad={this.state.isLoad}
-          />
-        
+        <JsonComponent
+          items={this.state.data.filter((item, idx) => {
+            if (
+              item.postId <= this.state.count &&
+              this.state.filterArray.indexOf(item.id) === -1
+            ) {
+              return item;
+            }
+          })}
+          addFilter={this.addFilter}
+          onSend={this.renderMoreItems}
+          onRemove={this.removeAllItems}
+          isLoad={this.state.isLoad}
+        />
+
         <Footer />
       </Fragment>
     );

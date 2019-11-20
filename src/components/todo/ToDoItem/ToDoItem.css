@@ -1,46 +1,45 @@
 .todo_Items {
-    text-align: center;
-    background-color: #d6e9ed;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    overflow: hidden;
-    width: 75vw;
-    background: #ffffff;
-    height: 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 16pt;
+  text-align: center;
+  background-color: #d6e9ed;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow: hidden;
+  width: 75vw;
+  background: #ffffff;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 16pt;
 }
 .todo_Items input {
-    text-align: center;
-    min-height: 90%;
-    font-size: 16pt;
+  text-align: center;
+  min-height: 90%;
+  font-size: 16pt;
 }
 .checkbox_item {
-    float: left;
-    
+  float: left;
 }
 .todo_Items button {
-    border: none;
-    margin-right:  10px;
-    float: right;
+  border: none;
+  margin-right: 10px;
+  float: right;
 }
 .achived {
-    text-decoration: line-through
+  text-decoration: line-through;
 }
-.item_position{
-    padding-top: 16px;
+.item_position {
+  padding-top: 16px;
 }
 .todo_Items div {
-    padding-left: 20px;
+  padding-left: 20px;
 }
-.button_remove{
-    border: none;
-    background: none;
+.button_remove {
+  border: none;
+  background: none;
 }
 .alert {
-    border: 1px solid red ;
+  border: 1px solid red;
 }

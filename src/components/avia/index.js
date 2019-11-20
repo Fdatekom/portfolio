@@ -2,9 +2,8 @@ import React from "react";
 import SideMenu from "./sideMenu/sideMenu";
 import MainContent from "./MainContent/MainContent";
 import Data from "./db.json";
-import './index.css'
+import "./index.css";
 import Footer from "../footer/footer";
-
 
 class Avia extends React.Component {
   constructor(props) {

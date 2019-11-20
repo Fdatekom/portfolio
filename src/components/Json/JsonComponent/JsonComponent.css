@@ -1,82 +1,79 @@
 .jsonComponent {
-    border-radius: 5px;
-    width: 60vw;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 10px;
-    padding-top: 10px;
-    background: #ffffff;
-    position: relative;
+  border-radius: 5px;
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding-top: 10px;
+  background: #ffffff;
+  position: relative;
 }
-.jsonComponent:first-child{
-    margin-top: 50px;
+.jsonComponent:first-child {
+  margin-top: 50px;
 }
-.jsonComponent:last-child{
-    margin-bottom: 200px;
+.jsonComponent:last-child {
+  margin-bottom: 200px;
 }
-.json_container{
-    padding-bottom: 100px;
+.json_container {
+  padding-bottom: 100px;
 }
 button {
-    border-radius: 15px;
-    user-select: none;
-    outline: none;
+  border-radius: 15px;
+  user-select: none;
+  outline: none;
 }
 section {
-    background: rgba(226,234,237,0.9);
-    width: 80vw;
-    min-height: 80vh;
-    max-height: max-content;
-    margin-left: 10vw;
+  background: rgba(226, 234, 237, 0.9);
+  width: 80vw;
+  min-height: 80vh;
+  max-height: max-content;
+  margin-left: 10vw;
 }
 .filterButton {
-    float: right;
-    border: none;
-    background:#ffffff; ;
-
+  float: right;
+  border: none;
+  background: #ffffff;
 }
-.jsonEmail{
-    margin: auto;
-    padding-left: 20px;
-    padding-top: 20px;
+.jsonEmail {
+  margin: auto;
+  padding-left: 20px;
+  padding-top: 20px;
 }
-.jsonName{
-    padding-left: 20px;
-    font-size: large;
-    margin: auto;
-    padding-top: 10px;
-
+.jsonName {
+  padding-left: 20px;
+  font-size: large;
+  margin: auto;
+  padding-top: 10px;
 }
-.jsonText{
-    padding-left: 20px;
+.jsonText {
+  padding-left: 20px;
 }
 .jsonTextBody {
-    text-indent: 1.5em;
-    margin: auto;
+  text-indent: 1.5em;
+  margin: auto;
 }
-.jsonButton{
-    width: 60vw;
-    border: none;
-    height: 20px;
-    font-weight: bold;
- 
-    margin: auto;
-    display: block;
-    height: 43px;
-    bottom: 85px;
-    color: #2f6ea5;
+.jsonButton {
+  width: 60%;
+  border: none;
+  height: 20px;
+  font-weight: bold;
+  margin: auto;
+  display: block;
+  height: 43px;
+  bottom: 85px;
+  color: #2f6ea5;
 }
-.json_more{
-    bottom: 135px;
-    background: #2f6ea5;
-    color: whitesmoke;
+.json_more {
+  bottom: 135px;
+  background: #2f6ea5;
+  color: whitesmoke;
 }
 .avatar {
-    float: left;
-    top: -15%;
-    position: absolute;
+  float: left;
+  top: -15%;
+  position: absolute;
 }
-.hr_json{
-    width: 90%;
-    margin-left: 3%;
+.hr_json {
+  width: 90%;
+  margin-left: 3%;
 }

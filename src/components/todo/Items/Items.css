@@ -1,31 +1,30 @@
 .todoElement {
-    margin-left: 35%;
-    margin-right: 35%;
-    width: 30%;
-    border: 2px solid red;
-    padding: 4px;
-    margin-top: 4px;
-    flex-wrap: nowrap;
-    overflow: hidden;
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 30%;
+  border: 2px solid red;
+  padding: 4px;
+  margin-top: 4px;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
-.toggle{
-    opacity: 0;
-  
+.toggle {
+  opacity: 0;
 }
 
 .inp2 {
-    z-index: 1;
-    position: relative left;
-    left: 0;
-    size: 80%;
+  z-index: 1;
+  position: relative left;
+  left: 0;
+  size: 80%;
 }
 .todoElement div {
-    float: left;
+  float: left;
 }
-.inp3{
-    outline:none;
-    border: none;
+.inp3 {
+  outline: none;
+  border: none;
 }
-.todo_container{
-    padding-bottom: 130px;
+.todo_container {
+  padding-bottom: 130px;
 }

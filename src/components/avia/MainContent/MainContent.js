@@ -18,10 +18,10 @@ class MainContent extends Component {
           <div className="mainCard" key={idx}>
             <div className="priceDiv">
               <div>
-                <img src={image} alt='Turkish Airlines ®️'/>
+                <img src={image} alt="Turkish Airlines ®️" />
               </div>
               <div>
-                <button className='buyButton'>
+                <button className="buyButton">
                   Купить <br />
                   за {item.price} Р
                 </button>
@@ -37,7 +37,7 @@ class MainContent extends Component {
             </div>{" "}
             <div className="stopsDiv">
               {" "}
-              <span className='stopsInfo'>
+              <span className="stopsInfo">
                 {item.stops}{" "}
                 <h5 className={item.stops === 0 ? "stops" : "none"}>
                   {" "}

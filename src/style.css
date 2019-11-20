@@ -1,40 +1,55 @@
 body {
-background: url('./background.jpg');
-background-size: cover;
-background-attachment: fixed;
-margin: auto;
-font-family: "Open Sans";
-font-size: 14pt;
+  background: url("./background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: auto;
+  font-family: "Open Sans";
+  font-size: 14pt;
 }
 
 section {
-    background: rgba(255, 255, 255, 0.9) ;
-    width: 80vw;
-    margin: auto;
+  background: rgba(255, 255, 255, 0.9);
+  width: 80vw;
+  margin: auto;
 
-    min-height: 100vh;
-    max-height: max-content;
-    margin-bottom: 20px;
+  min-height: 100vh;
+  max-height: max-content;
+  margin-bottom: 20px;
 }
 @media (max-width: 900px) {
-    section {
-        min-width: 95vw;
-        margin:auto;
-    }
+  section {
+    min-width: 95vw;
+    margin: auto;
   }
-  @media(max-width: 650px) {
-      section{
-          min-width: 650px;
-      }
+}
+@media (max-width: 650px) {
+  section {
+    min-width: 650px;
   }
-  h1{
-      font-family: Merriweather;
-      font-size: 16pt;
-      font-weight: bold;
-    color: #3352a1;
+}
+@media (min-width: 1920px) {
+  body {
+    width: 1920px;
   }
-  h3{
-      font-family: Merriweather;
-      font-size: 15pt;
-      font-weight: bold;
+  section {
+    width: 80%;
   }
+  .mainPage {
+    max-width: 80%;
+    padding-left: 10% !important;
+  }
+  .footer {
+    max-width: 1920px;
+  }
+}
+h1 {
+  font-family: Merriweather;
+  font-weight: bold;
+  font-size: 24pt;
+  color: rgba(51, 110, 164, 255);
+}
+h3 {
+  font-family: Merriweather;
+  font-size: 15pt;
+  font-weight: bold;
+}

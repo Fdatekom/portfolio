@@ -1,6 +1,7 @@
 .avia {
-    background: rgba(255, 255, 255, 0.9) ;
-    max-width: 80vw;  min-height: 80vh;
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 80vw;
+  min-height: 80vh;
   max-height: max-content;
   margin: auto;
   display: flex;
@@ -13,13 +14,13 @@
 }
 @media (max-width: 900px) {
   .avia {
-      display: block;
-      min-width: 95vw;
+    display: block;
+    min-width: 95vw;
   }
 }
-@media(max-width: 650px) {
-    .avia{
-        display: block;
-        min-width: 650px;
-    }
+@media (max-width: 650px) {
+  .avia {
+    display: block;
+    min-width: 650px;
+  }
 }

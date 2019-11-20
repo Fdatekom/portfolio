@@ -1,35 +1,36 @@
 .TodoActive {
-    text-align: center;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-top: 20px;
-    font-family: OpenSans, AdobeInvisFont, Tahoma;
-font-size: 16pt;
-color: rgba(144, 144, 144, 255);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  font-family: OpenSans, AdobeInvisFont, Tahoma;
+  font-size: 16pt;
+  color: rgba(144, 144, 144, 255);
 }
-.button_filter_todo{
-    border: none;
-    background: rgba(255, 255, 255,0.0) ;
-    font-size: 16pt;
-    font-family: OpenSans;
+.button_filter_todo {
+  border: none;
+  background: rgba(255, 255, 255, 0);
+  font-size: 16pt;
+  font-family: OpenSans;
 }
-.button_filter_todo:focus{
-    border: none;
-    border-radius: 0;
-    border-bottom: 1px solid blue;
-    
+.button_filter_todo:focus {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid blue;
 }
-.button_del_todo{
-    position: fixed;
-    bottom: 85px;
-    width: 75vw;
-    margin: auto;
-    left: 0;
-    right: 0;
-    height: 45px;
-    background: #2f6ea5;
-    border: none;
+.button_del_todo {
+  position: fixed;
+  bottom: 85px;
+  width: 75%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background: #2f6ea5;
+  border: none;
 }
-/* .clear_conreiner{
-    width: 100%;
-} */
+@media (min-width: 1920px) {
+  .clear_container {
+    max-width: 1920px;
+  }
+}

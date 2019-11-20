@@ -5,12 +5,18 @@ import Items from "./Items/Items";
 import "./todo.css";
 import Footer from "../footer/footer";
 import { setTimeout } from "timers";
+
 function updateArrayItem(array, action) {
   return array.map(item => {
     if (item.id !== action.id) {
       return item;
     } else if (item.id === action.id) {
-      return { text: action.text, id: item.id, isAchived: item.isAchived, className: '' };
+      return {
+        text: action.text,
+        id: item.id,
+        isAchived: item.isAchived,
+        className: "",
+      };
     }
   });
 }
@@ -25,7 +31,12 @@ function achievedArrayItem(array, action) {
     if (item.id !== action.id) {
       return item;
     } else if (item.id === action.id) {
-      return { text: item.text, id: item.id, isAchieved: !action.isAchieved, className: '' };
+      return {
+        text: item.text,
+        id: item.id,
+        isAchieved: !action.isAchieved,
+        className: "",
+      };
     }
   });
 }
@@ -34,17 +45,26 @@ function removeAchievidItems(array) {
     return item.isAchieved === false;
   });
 }
-function alertUpdate(propertyName, array , arg){
- return array.map(item => {
-   if(item.id === propertyName && arg ){
-      return {  text: item.text, id: item.id, isAchieved: item.isAchieved, className: 'alert' }
-  } else if(item.id === propertyName && !arg ){
-     return {  text: item.text, id: item.id, isAchieved: item.isAchieved, className: '' }
-   } else {
-     return item
-   }
- })
-
+function alertUpdate(propertyName, array, arg) {
+  return array.map(item => {
+    if (item.id === propertyName && arg) {
+      return {
+        text: item.text,
+        id: item.id,
+        isAchieved: item.isAchieved,
+        className: "alert",
+      };
+    } else if (item.id === propertyName && !arg) {
+      return {
+        text: item.text,
+        id: item.id,
+        isAchieved: item.isAchieved,
+        className: "",
+      };
+    } else {
+      return item;
+    }
+  });
 }
 class Todo extends Component {
   constructor(props) {
@@ -54,7 +74,7 @@ class Todo extends Component {
       todos: [],
       active: "all",
       isEdit: false,
-      updateItemId: ''
+      updateItemId: "",
     };
   }
 
@@ -80,7 +100,7 @@ class Todo extends Component {
       id: id,
       text: lastText,
       isAchieved: false,
-      updateItemId: ''
+      updateItemId: "",
     });
     this.setState({
       todos: newTodo,
@@ -101,7 +121,7 @@ class Todo extends Component {
   onActive = propertyName => {
     this.setState({
       active: propertyName,
-      isEdit: false
+      isEdit: false,
     });
   };
   onRemoveAchieved = event => {
@@ -110,34 +130,33 @@ class Todo extends Component {
     this.setState({ todos: newTodo });
   };
 
-  onEdit = propertyName  =>{
+  onEdit = propertyName => {
     this.setState({
       isEdit: !this.state.isEdit,
-      updateItemId: propertyName
-    })
-  }
+      updateItemId: propertyName,
+    });
+  };
 
   alertInput = propertyName => {
-    const {updateItemId } = this.state
-    const newTodos = alertUpdate(updateItemId, this.state.todos, true)
-    this.setState({todos: newTodos })
-    const after= arg => {
-      const afterTodos = alertUpdate(updateItemId, this.state.todos, false)
+    const { updateItemId } = this.state;
+    const newTodos = alertUpdate(updateItemId, this.state.todos, true);
+    this.setState({ todos: newTodos });
+    const after = arg => {
+      const afterTodos = alertUpdate(updateItemId, this.state.todos, false);
       this.setState({
-        todos: afterTodos
-      })
-    }
-    setTimeout(after, 1000)
-  }
+        todos: afterTodos,
+      });
+    };
+    setTimeout(after, 1000);
+  };
   render() {
     const todos = this.state.todos;
     return (
       <Fragment>
         <section>
-          <div style={{fontSize:"10pt"}}>
+          <div style={{ fontSize: "10pt" }}>
             Использование CRUD в приложении
           </div>
-       
 
           <ItemsForm onAdd={this.handleAdd} />
           <TodoActive
@@ -167,7 +186,6 @@ class Todo extends Component {
             onEdit={this.onEdit}
             alertInput={this.alertInput}
           />
-          
         </section>
         <Footer />
       </Fragment>

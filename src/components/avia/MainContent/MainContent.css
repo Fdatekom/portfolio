@@ -84,11 +84,13 @@ h3 {
   line-height: 26px;
 }
 .aviaMainContent{
+  margin: auto;
   margin-top: 20px;
   padding-right: 30px;
 }
 .priceDiv div img {
   width: 130px;
+  padding-top: 2px;
 }
 @media (max-width: 900px){
   .aviaMainContent{
