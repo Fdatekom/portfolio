@@ -18,19 +18,19 @@
   border-radius: 0;
   border-bottom: 1px solid blue;
 }
-.button_del_todo {
-  position: fixed;
-  bottom: 85px;
-  width: 75%;
+.clear_conteiner{
   margin: auto;
-  left: 0;
-  right: 0;
+  width: 75%;
+}
+.button_del_todo {
+  width: 100%;
+  margin: auto;
   height: 45px;
   background: #2f6ea5;
   border: none;
 }
 @media (min-width: 1920px) {
-  .clear_container {
+  .clear_conteiner {
     max-width: 1920px;
   }
 }

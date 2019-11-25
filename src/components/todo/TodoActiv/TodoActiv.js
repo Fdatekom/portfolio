@@ -40,11 +40,8 @@ export default class TodoActiv extends Component {
           Compited
         </button>{" "}
         <br />
-        <div className="clear_conteiner">
-          <button className="button_del_todo" onClick={this.props.onRemove}>
-            Clear
-          </button>
-        </div>
+
+       
       </div>
     );
   }

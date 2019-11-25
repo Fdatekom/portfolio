@@ -186,6 +186,11 @@ class Todo extends Component {
             onEdit={this.onEdit}
             alertInput={this.alertInput}
           />
+          <div className="clear_conteiner">
+          <button className="button_del_todo" onClick={this.props.onRemove}>
+            Delete all
+          </button>
+          </div>
         </section>
         <Footer />
       </Fragment>

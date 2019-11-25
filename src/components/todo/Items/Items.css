@@ -27,4 +27,6 @@
 }
 .todo_container {
   padding-bottom: 130px;
+  width: 75%;
+  margin: auto;
 }

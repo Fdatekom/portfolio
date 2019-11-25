@@ -77,3 +77,11 @@ section {
   width: 90%;
   margin-left: 3%;
 }
+@media screen and (max-width: 650px){
+  .avatar{
+    top: -10%
+  }
+  .jsonComponent:first-child{
+    margin-top: 80px;
+  }
+}

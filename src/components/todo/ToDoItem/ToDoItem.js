@@ -83,14 +83,14 @@ export default class ToDoItem extends Component {
             value={newText}
             onChange={this.hendlerPropertyChange}
             autoFocus
-            className={className}
+            className={className + ' todoDivItem'}
           />
         ) : (
           <div
             id={id}
             key={idx}
             onDoubleClick={this.onDoubleClick}
-            className={this.props.isAchieved ? "achived " : "notAchived"}
+            className={this.props.isAchieved ? "achived todoDivItem " : "todoDivItem notAchived"}
           >
             <input
               type="checkbox"
