@@ -31,19 +31,19 @@ export default class Head extends Component {
     return (
       <div className="header">
         <div className='humburger_menu' onClick={this.onClick()}><i className="fa fa-align-justify" aria-hidden="true"></i> </div>
-        <div className={"header_container " + this.state.style}>
+        <div className={"header_container " + this.state.style} onClick={this.onClick()}>
           <Link to="/">Home </Link>
           <img className="header_icon" src={image1} alt="home" />
         </div>
-        <div className={"header_container "+ this.state.style}>
+        <div className={"header_container "+ this.state.style} onClick={this.onClick()}>
           <Link to="/todo">ToDo</Link>{" "}
           <img className="header_icon" src={image2} alt="todo" />
         </div>
-        <div className={"header_container "+ this.state.style}>
+        <div className={"header_container "+ this.state.style} onClick={this.onClick()}>
           <Link to="/json"> Json</Link>{" "}
           <img className="header_icon" src={image3} alt="json" />
         </div>
-        <div className={"header_container " + this.state.style}>
+        <div className={"header_container " + this.state.style} onClick={this.onClick()}>
           <Link to="/avia"> Test Aviasales</Link>{" "}
           <img className="header_icon" src={image4} alt="avia" />
         </div>

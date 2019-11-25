@@ -22,5 +22,7 @@
   .avia {
     display: block;
     min-width: 650px;
+    padding-top: 50px;
   }
+
 }
