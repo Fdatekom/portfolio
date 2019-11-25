@@ -1,9 +1,10 @@
 .sideMenu {
   height: max-content;
   margin-top: 30px;
-  margin-left: 30px;
+  margin-left: auto;
   width: 15vw;
   min-width: max-content;
+  border: none;
 }
 .sideMenu ul {
   padding-left: 0;

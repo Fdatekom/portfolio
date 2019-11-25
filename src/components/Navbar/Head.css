@@ -22,12 +22,7 @@
   vertical-align: top;
   padding-left: 10px;
 }
-.header_container:last-child {
-  border-right-style: none;
-}
-.header_container:first-child {
-  margin-left: 10%;
-}
+
 .header_container {
   display: inline-block;
   border-right-style: solid;
@@ -41,6 +36,12 @@
 }
 .humburger_menu{
   display: none;
+}
+.header_container:last-child {
+  border-right-style: none;
+}
+.header_container:nth-child(2) {
+  padding-left: 10vw;
 }
 @media (max-width: 650px) {
   .header {
