@@ -37,7 +37,7 @@ export default class TodoActiv extends Component {
           className="button_filter_todo"
           onClick={this.onActiveAll("complited")}
         >
-          Compited
+          Complited
         </button>{" "}
         <br />
 

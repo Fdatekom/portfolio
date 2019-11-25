@@ -12,11 +12,14 @@
 
 @media (max-width: 650px) {
   .mainPage {
+    
       padding-left: 3px;
       margin-left: 0;
       padding-right: 0;
     }
-  
+    .mainPage p {
+      width: 100%;
+    }
 }
 .mainPage a {
   text-decoration: none;

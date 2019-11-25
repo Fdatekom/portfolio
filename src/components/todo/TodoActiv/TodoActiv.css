@@ -1,11 +1,11 @@
 .TodoActive {
-  text-align: center;
-  margin: auto;
+  margin-left: 10vw;
   margin-bottom: 20px;
   padding-top: 20px;
   font-family: OpenSans, AdobeInvisFont, Tahoma;
   font-size: 16pt;
   color: rgba(144, 144, 144, 255);
+  width: max-content;
 }
 .button_filter_todo {
   border: none;
