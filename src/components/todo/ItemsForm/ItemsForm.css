@@ -26,6 +26,15 @@ form input:focus {
 
 @media (max-width: 650px) {
   form {
-    width: 650px;
+    width: auto;
+    padding-left: 10px;
+  }
+  form input{
+    font-size: 18pt;
+    max-width: 82%;
+    min-width: 70%;
+  }
+  form input::placeholder {
+    font-size: 20pt;
   }
 }

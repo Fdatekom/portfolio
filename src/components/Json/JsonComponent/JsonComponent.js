@@ -31,12 +31,12 @@ class JsonComponent extends Component {
                 X
               </button>
               <p className="jsonEmail">
-                <i class="fa fa-envelope-open-o" aria-hidden="true"></i>{" "}
+                <i className="fa fa-envelope-open-o" aria-hidden="true"></i>{" "}
                 <strong>email:</strong> {item.email}
               </p>{" "}
               <p className="jsonName">
                 {" "}
-                <i class="fa fa-user-circle" aria-hidden="true"></i>{" "}
+                <i className="fa fa-user-circle" aria-hidden="true"></i>{" "}
                 <strong>name:</strong> {item.name}
               </p>{" "}
               <hr className="hr_json" />

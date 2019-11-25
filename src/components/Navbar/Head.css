@@ -39,8 +39,25 @@
   margin-left: 10px;
   margin-top: 10px;
 }
+.humburger_menu{
+  display: none;
+}
 @media (max-width: 650px) {
   .header {
     min-width: 650px;
+    position: fixed;
+    z-index: 1000;
+  }
+  .humburger_menu{
+    display: block;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header_container{
+    display: none;
+  }
+  .openNav{
+    display: inline-block;
   }
 }

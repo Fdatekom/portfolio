@@ -34,3 +34,8 @@
     max-width: 1920px;
   }
 }
+@media screen and (max-width:650px){
+  .button_del_todo{
+    bottom: 130px;
+  }
+}

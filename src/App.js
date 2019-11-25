@@ -7,10 +7,11 @@ import Json from "./components/Json";
 import "./style.css";
 import Main from "./components/main/main";
 
+const history = Route.browserHistory
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter history={history }>
         <Navbar />
 
         <Route exact path="/" component={Main} />
