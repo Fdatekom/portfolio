@@ -28,6 +28,9 @@
   height: 45px;
   background: #2f6ea5;
   border: none;
+  color:rgba(255, 255, 255, 1);
+  font-size: 16pt;
+  font-family: OpenSans;
 }
 @media (min-width: 1920px) {
   .clear_conteiner {

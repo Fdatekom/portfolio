@@ -98,7 +98,7 @@ export default class ToDoItem extends Component {
               onChange={this.checkboxChange}
               checked={this.props.isAchieved}
             />{" "}
-            {text}{" "}
+            <div className='textDivTodo'><p>{text}{" "}</p></div>
             <button
               className="button_remove"
               onClick={() => this.props.onRemove(id)}
