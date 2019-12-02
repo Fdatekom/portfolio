@@ -8,6 +8,6 @@ Created by Ostapenko Boris.
 ## Libraries
 Libraries were used in the project:
 
-1.React
-2.Nanoid
-3.React-router-dom
+1.  React
+2.  Nanoid
+3.  React-router-dom
