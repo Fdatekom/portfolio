@@ -44,6 +44,9 @@
   padding-left: 10vw;
 }
 @media (max-width: 650px) {
+  .header_container:nth-child(2) {
+    padding-left: 0;
+  }
   .header {
     min-width: 650px;
     position: fixed;
