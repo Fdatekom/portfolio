@@ -16,12 +16,6 @@ class JsonComponent extends Component {
   render() {
     return (
       <section>
-        <div style={{ fontSize: "10pt" }}>
-          Асинхронная подгрузка json файла с{" "}
-          <a href="https://jsonplaceholder.typicode.com/comments">
-            jsonplaceholder
-          </a>
-        </div>
         <div className="json_container">
           {this.props.items.map((item, idx) => (
             <div key={idx} className="jsonComponent" id={item.id}>

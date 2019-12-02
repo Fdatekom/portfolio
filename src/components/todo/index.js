@@ -154,9 +154,6 @@ class Todo extends Component {
     return (
       <Fragment>
         <section>
-          <div style={{ fontSize: "10pt" }}>
-            Использование CRUD в приложении
-          </div>
 
           <ItemsForm onAdd={this.handleAdd} />
           <TodoActive
