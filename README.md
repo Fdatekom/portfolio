@@ -21,16 +21,13 @@ Libraries were used in the project:
 ### Todo
 
 Todo uses all methods of CRUD.   
-
 You can create a new item, edit, update and delete.  
-
 Filtering an array of items by Completed All and Active  
 
 ### Json 
 
 
 Asynchronous download from the site [jsonplaceholder](https://jsonplaceholder.typicode.com/comments )  
-
 Uploading new data using the "Watch more" button by the PostId property.
 
 
@@ -39,8 +36,8 @@ Uploading new data using the "Watch more" button by the PostId property.
 
 
 Test task Aviasales found on the Internet.  
-
 The entire database is stored in db.json.  
-
+[Test task Aviasels](https://github.com/Fdatekom/portfolio/tree/master/aviasales).  
+*** did not task5
 
 
